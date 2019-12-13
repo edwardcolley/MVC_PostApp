@@ -47,7 +47,8 @@ class Core
             }
         }
 
-        //Get Params
+        //Get Params // array_values looks in $url and if there's
+        //parameters, they get added. If not, then empty array.
         $this->params = $url ? array_values($url) : [];
 
         //Call a callback with an array of Params
